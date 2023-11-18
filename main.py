@@ -16,6 +16,10 @@ def fun2(a, b, c):
     return a * b * c
 
 
+def fun3(a: int, b: int) -> int:
+    return a + b
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print(fun1(1, 2, 3))
