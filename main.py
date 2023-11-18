@@ -1,16 +1,22 @@
 # This is a sample Python script.
+from elapsed import aop
+
 
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+@aop
+def fun1(a, b, c):
+    return a + b + c
+
+
+@aop
+def fun2(a, b, c):
+    return a * b * c
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    print(fun1(1, 2, 3))
+    print(fun2(1, 2, 3))
