@@ -13,7 +13,7 @@ print(decoding_str)
 
 from PIL import Image
 
-path = './img.png'
+path = 'img.png'
 # img = Image.open(path)
 with open(path, 'rb') as img:
     image = img.read()
@@ -34,7 +34,7 @@ with open(path, 'rb') as img1:
 decoded = base64.decodebytes(encoded)
 print(decoded)
 
-file = "./img1.png"
+file = "img1.png"
 
 with open(file, 'wb') as file:
     file.write(decoded)
