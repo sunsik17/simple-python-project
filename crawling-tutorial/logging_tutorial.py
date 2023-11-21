@@ -11,7 +11,9 @@ file_handler = logging.FileHandler('sample.log')
 file_handler.setFormatter(formatting)
 logger.addHandler(file_handler)
 
-def myFunc():
+
+def my_func():
     logger.info('실행 로그')
 
-myFunc()
+
+my_func()
