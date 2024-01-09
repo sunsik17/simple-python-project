@@ -10,7 +10,7 @@ headers = {
 
 response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.text, 'html.parser')
-result_chart = soup.select("#lst50") + soup.select("#lst100")
+result_chart = soup.find_all(class_=["lst50", "lst100"])  # ==> soup.select(".lst50", ".lst100") 둘은 같은 동작
 singer_url = "https://www.melon.com/artist/timeline.htm?artistId="
 album_url = "https://www.melon.com/album/detail.htm?albumId="
 rank = 1
